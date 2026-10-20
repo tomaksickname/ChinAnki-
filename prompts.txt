@@ -1,0 +1,49 @@
+# ============================================================
+# CHINANKI — PYTHON COMMANDS
+# ============================================================
+
+# START THE SERVER (leave running in its own terminal)
+cd /Users/ed/Desktop/Chinanki
+python -m chinanki.server
+
+# START THE SERVER ON A DIFFERENT PORT
+CHINANKI_PORT=9000 python -m chinanki.server
+
+# ------------------------------------------------------------
+# GENERATE A STORY
+# ------------------------------------------------------------
+python -m chinanki.generate_story --topic "a small problem at home" --new 10 --length 300
+
+# Dry run (builds the prompt, no API call)
+python -m chinanki.generate_story --dry-run --topic "a small problem at home"
+
+# Validate but don't rate SRS or save
+python -m chinanki.generate_story --topic "a small problem at home" --no-save
+
+# ------------------------------------------------------------
+# TTS
+# ------------------------------------------------------------
+python -m chinanki.tts --warm
+python -m chinanki.tts 今天
+python -m chinanki.tts --story 2026-10-01T184340
+
+# ------------------------------------------------------------
+# STATE / STORY INSPECTION
+# ------------------------------------------------------------
+python -m chinanki.state
+python -m chinanki.srs
+python -m chinanki.prompts
+python -m chinanki.gloss_clean
+python -m chinanki.vocab
+python -m chinanki.config
+
+# ------------------------------------------------------------
+# SRS RESET (wipe all scheduling)
+# ------------------------------------------------------------
+rm -f data/srs_state.json
+python -m chinanki.state
+
+# ------------------------------------------------------------
+# CLEAR ONLY TODAY'S BATCH
+# ------------------------------------------------------------
+python -c "from chinanki.state import load_state, save_state; st = load_state(); st['today'] = {}; save_state(st); print('cleared')"

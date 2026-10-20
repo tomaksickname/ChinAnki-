@@ -1,0 +1,14 @@
+[
+  {"hanzi": "能", "pinyin": "néng", "english": "can; to be able to", "traditional": "能", "pos": "v", "category": "verb"},
+  {"hanzi": "这里", "pinyin": "zhè lǐ", "english": "here", "traditional": "這裡", "pos": "r", "category": "pronoun"},
+  {"hanzi": "这时", "pinyin": "zhè shí", "english": "at this moment", "traditional": "這時", "pos": "t", "category": "time"},
+  {"hanzi": "那时", "pinyin": "nà shí", "english": "at that moment", "traditional": "那時", "pos": "t", "category": "time"},
+  {"hanzi": "后天", "pinyin": "hòu tiān", "english": "day after tomorrow", "traditional": "後天", "pos": "t", "category": "time"},
+  {"hanzi": "前天", "pinyin": "qián tiān", "english": "day before yesterday", "traditional": "前天", "pos": "t", "category": "time"},
+  {"hanzi": "不大", "pinyin": "bù dà", "english": "not very; not too", "traditional": "不大", "pos": "d", "category": "adverb"},
+  {"hanzi": "昨天", "pinyin": "zuó tiān", "english": "yesterday", "traditional": "昨天", "pos": "t", "category": "time"},
+  {"hanzi": "明天", "pinyin": "míng tiān", "english": "tomorrow", "traditional": "明天", "pos": "t", "category": "time"},
+  {"hanzi": "哪儿", "pinyin": "nǎ r", "english": "where", "traditional": "哪兒", "pos": "r", "category": "pronoun"},
+  {"hanzi": "好久", "pinyin": "hǎo jiǔ", "english": "a long time", "traditional": "好久", "pos": "t", "category": "time"},
+  {"hanzi": "麻烦", "pinyin": "má fan", "english": "trouble; troublesome", "traditional": "麻煩", "pos": "a", "category": "adj"}
+]

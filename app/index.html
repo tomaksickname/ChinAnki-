@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chinanki</title>
+<link rel="stylesheet" href="/app/app.css">
+</head>
+<body>
+<div class="page">
+  <div class="app-card">
+
+    <header class="topbar">
+      <div class="topbar-left">
+        <button id="generate-btn" class="primary">Generate</button>
+        <label class="field">
+          <span class="field-label">New</span>
+          <input type="number" id="new-count" value="10" min="0" max="20" step="1">
+        </label>
+        <label class="field">
+          <span class="field-label">Length</span>
+          <input type="number" id="length" value="150" min="50" max="1000" step="10">
+        </label>
+        <label class="field">
+          <span class="field-label">±%</span>
+          <input type="number" id="range" value="15" min="0" max="50" step="5">
+        </label>
+        <label class="field checkbox">
+          <input type="checkbox" id="mute" checked>
+          <span class="field-label">Sound</span>
+        </label>
+      </div>
+      <div class="topbar-right">
+        <select id="stories-select">
+          <option value="">— previous stories —</option>
+        </select>
+        <span id="state-info" class="state-info"></span>
+      </div>
+    </header>
+
+    <section class="topic-bar">
+      <div class="topic-input-row">
+        <input type="text" id="topic-input" placeholder="topic or instructions (optional)">
+        <button id="topics-btn" class="secondary">Suggest topics</button>
+      </div>
+      <div id="topic-chips-wrap" class="topic-chips-wrap hidden">
+        <div id="topic-chips" class="topic-chips"></div>
+        <button id="chips-close" class="chips-close" aria-label="close topics">×</button>
+      </div>
+    </section>
+
+    <main id="reader" class="reader">
+      <p class="empty">Click <strong>Generate</strong> or load a previous story from the dropdown.</p>
+    </main>
+
+  </div>
+</div>
+
+<button id="pacing-pause-btn" class="pacing-pause hidden" aria-label="pause">⏸</button>
+
+<div id="status" class="status"></div>
+
+<script src="/app/app.js"></script>
+</body>
+</html>

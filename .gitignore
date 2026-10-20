@@ -1,0 +1,17 @@
+# API Keys and Environment
+.env
+*.env
+
+# Virtual environments
+venv/
+.venv/
+
+# Generated content (don't commit daily stories or audio)
+stories/
+audio/
+data/srs_state.json
+
+# OS generated files
+.DS_Store
+__pycache__/
+*.pyc
