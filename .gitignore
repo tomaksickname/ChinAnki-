@@ -15,3 +15,9 @@ data/srs_state.json
 .DS_Store
 __pycache__/
 *.pyc
+
+# Backup files
+data/*.backup_*.json
+
+# iCloud symlink
+audio
